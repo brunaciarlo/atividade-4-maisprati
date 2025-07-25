@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg: #0c0c0c;
+    --bg-darker: #0a0a0a;
+    --highlight: #0dd2d9;
+}
+
+body{
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+    width: 100vw;
+    background: linear-gradient(65deg, var(--bg)50%, #002438 100%);
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#bruna{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover{
+    color: var(--highlight);
+}
+
+#btn-cv{
+    background: #5bf4fffd;
+    color: #0a0a0a;
+    padding: 10px 10px 12px;
+    border-radius: 8px;
+}
+
+#btn-cv:hover{
+    background: #248991fd;
+}
+
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.hero-content{
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-image{
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+#foto-perfil{
+    width: 380px;
+    animation: float 3s ease-in-out infinite;
+    filter: grayscale(0.2) contrast(1.1);
+}
+
+@keyframes float{
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+}
+
+.hero h1, .hero h2{
+    opacity: 0.9;
+    background: linear-gradient(45deg, #0a8e92 20%, var(--highlight) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h1{
+    font-size: 60px;
+    margin-bottom: -15px;
+}
+
+.hero h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+.hero p{
+    font-size: 20px;
+    opacity: 0.9;
+    max-width: 600px;
+}
+
+#links-redes{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px
+}
+
+.btn-redes {
+    text-decoration: none;
+    color: var(--highlight);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border: 1px solid var(--highlight);
+    border-radius: 40px;
+}
+
+.btn-redes:hover{
+    transform: translate(5px, -5px);
+    background-color: var(--highlight);
+    color: var(--bg);
+    cursor: pointer;
+}
+
+.habilidades{
+    padding: 40px 10%;
+    background: var(--bg-darker);
+}
+
+.grid-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card-habilidade{
+    padding: 30px 25px 38px 25px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.card-habilidade i{
+    color: var(--highlight);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card-habilidade:hover{
+    transform: translateY(-8px);
+    border-color: var(--highlight);
+    box-shadow: 0 10px 15px #08748c42;
+    cursor: default;
+}
+
+.projetos{
+    padding: 40px 10%;
+}
+
+.grid-projetos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card-projeto{
+    text-align: center;
+    padding: 30px 25px 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.card-projeto img{
+    aspect-ratio: 16/9;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card-projeto:hover{
+    transform: translateY(-8px);
+    border-color: var(--highlight);
+    box-shadow: 0 10px 15px #08748c42;
+    cursor: pointer;
+}
+
+.contato{
+    padding: 40px 60px;
+    background: var(--bg-darker);
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.267);
+    text-align: center;
+    padding: 15px;
+}

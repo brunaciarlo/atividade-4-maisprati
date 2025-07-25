@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio Bruna</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home" id="bruna"> Bruna </a>
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="assets/curriculo.pdf" download="curriculo.pdf" id="btn-cv"><i class="fa-solid fa-download"></i> Curriculo</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bruna Ciarlo</h1>
+            <h2>Dev Full Stack</h2>
+            <p>Graduada em Análise e Desenvolvimento de Sistemas</p>
+            <p>Atualmente aprofundando meu conhecimento em desenvolvimento web</p>
+            <div id="links-redes">
+                <a href="https://www.linkedin.com/in/bruna-ciarlo/" class="btn-redes" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span> | LinkedIn</span>
+                </a>
+                <a href="https://www.github.com/brunaciarlo/" class="btn-redes" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    <span> | GitHub</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/pic.png" alt="Foto perfil" id="foto-perfil">
+        </div>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+        <h2>Habilidades técnicas</h2>
+        <div class="grid-cards">
+            <div class="card-habilidade">
+                <i class="fa-solid fa-code"></i>
+                <h3>Desenvolvimento Front-end</h3>
+                <p>HTML5, CSS3, JavaScript, React</p>
+            </div>
+
+            <div class="card-habilidade">
+                <i class="fa-solid fa-database"></i>
+                <h3>Desenvolvimento Back-end</h3>
+                <p>Java, Spring Framework, C#, SQL</p>
+            </div>
+
+            <div class="card-habilidade">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Desing</h3>
+                <p>Figma, Illustrator, Photoshop</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2>Projetos</h2>
+        <div class="grid-projetos">
+            <div class="card-projeto">
+                <img src="assets/projeto-confirmacao.JPG" alt="Projeto 1">
+                <h3 class="nome-projeto">Confirmação de presença</h3>
+                <p>Descrição projeto</p>
+            </div>
+            <div class="card-projeto">
+                <img src="assets/projeto-bicho.JPG" alt="Projeto 2">
+                <h3 class="nome-projeto">Brechó pet</h3>
+                <p>Descrição projeto</p>
+            </div>
+            <div class="card-projeto">
+                <img src="assets/projeto-contagem.JPG" alt="Projeto 3">
+                <h3 class="nome-projeto">Contagem de dias</h3>
+                <p>Descrição projeto</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bruna Ciarlo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
