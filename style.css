@@ -190,6 +190,11 @@ body{
     margin-top: 30px;
 }
 
+.grid-projetos a{
+    color: white;
+    text-decoration: none;
+}
+
 .card-projeto{
     text-align: center;
     padding: 30px 25px 20px;
